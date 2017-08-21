@@ -1,0 +1,23 @@
+service: boldleads-serverless-aws-lambda-mysql-boilerplate
+provider:
+  name: aws
+  runtime: nodejs6.10
+  region: us-west-2
+	vpc:
+		securityGroupIds:
+			- sg-1034ad6b
+		subnetIds:
+      - subnet-66246b01
+      - subnet-ca926291
+      - subnet-f07117b9
+plugins:
+  - serverless-webpack
+custom:
+  - webpackIncludeModules: true
+functions:
+  read:
+    handler: handler.read
+    events:
+      - http:
+          path: /
+          method: get

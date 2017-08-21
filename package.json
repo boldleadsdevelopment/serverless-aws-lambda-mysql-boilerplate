@@ -1,0 +1,27 @@
+{
+  "name": "boldleads-serverless-aws-lambda-mysql-boilerplate",
+  "version": "0.1",
+  "description": "Our boilerplate repo for using MySQL from AWS Lambda with Serverless Framework",
+  "main": "handler.js",
+  "scripts": {
+    "test": "nodejs tests.js || echo \"Error: test failed\" && exit 1"
+  },
+  "author": "Jason@iDoMeteor <idometeor@gmail.com> (http://codementor.io/idometeor)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-polyfill": "6.13.0",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "glob": "^7.1.1",
+    "serverless-webpack": "^1.0.0-rc.4"
+  },
+  "dependencies": {
+    "babel-runtime": "6.11.6",
+    "mysql": "^2.13.0",
+    "path": "^0.12.7",
+    "serverless-webpack": "^1.0.0-rc.4",
+  }
+}

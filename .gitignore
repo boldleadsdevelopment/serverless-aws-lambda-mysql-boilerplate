@@ -1,0 +1,14 @@
+.*.swn
+.*.swo
+.*.swp
+*.swn
+*.swo
+*.swp
+*~
+.serverless
+.webpack
+jspm_packages
+node_modules
+private/
+settings-production.json
+smart.lock

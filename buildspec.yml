@@ -1,0 +1,10 @@
+version: 0.1
+phases:
+  build:
+    commands:
+      - serverless webpack
+      - serverless deploy --stage $STAGE
+  install:
+    commands:
+      - npm install
+      - npm install -g serverless
